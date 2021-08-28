@@ -1946,15 +1946,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec78153be45064144ae5c01b2c233924, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6
+      value: 2.015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec78153be45064144ae5c01b2c233924, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.22
+      value: -4.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec78153be45064144ae5c01b2c233924, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.3
+      value: -4.504
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec78153be45064144ae5c01b2c233924, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1996,6 +1996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sitting Talking
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ec78153be45064144ae5c01b2c233924, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 065213ef49dcba74486b32afb2131117, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec78153be45064144ae5c01b2c233924, type: 3}
 --- !u!1001 &1884137288
