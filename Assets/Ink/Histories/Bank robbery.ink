@@ -20,10 +20,12 @@ Muito bem, e você? #Game
 
 == Par3Res1 ==
 * [Bem, dentro do possível] #Player #NEUTRO
+-> END
 
 == Par3Res2 ==
 * [Não muito bem, sabe como a vida é] #Player NEUTRO
+-> END
 
 == Par3Res3 ==
-
-
+* [Teste] #Player #ENDGAME
+-> END
