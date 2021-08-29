@@ -1,4 +1,4 @@
-Bom dia #Game
+<b>Bom dia</b> #Game
 -> First_Choices
 
 == First_Choices ==

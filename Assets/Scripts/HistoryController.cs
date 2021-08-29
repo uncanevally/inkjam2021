@@ -22,6 +22,7 @@ public class HistoryController : MonoBehaviour
     void updateUI()
     {
         eraseUI();
+        bool isGameTalking = false;
 
         Text storyText = Instantiate(textPrefab) as Text;
         string text = loadStory();
@@ -30,6 +31,7 @@ public class HistoryController : MonoBehaviour
         List<string> tags = story.currentTags;
         if (tags.Count > 0)
         {
+            if (tags[0] == "Game") isGameTalking = true;
             for (int i = 0; i < tags.Count; i++)
             {
                 // check endGame here
@@ -37,6 +39,13 @@ public class HistoryController : MonoBehaviour
         }
 
         storyText.text = text;
+        if (isGameTalking)
+        {
+            Debug.Log("aaaa");
+            storyText.color = new Color(233, 231, 76);
+        }
+        else storyText.color = Color.white;
+
         storyText.transform.SetParent(this.transform, false);
 
         foreach (Choice choice in story.currentChoices)
