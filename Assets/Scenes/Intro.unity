@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004048772, g: 0.00022122823, b: 0.000000055137445, a: 1}
+  m_IndirectSpecularColor: {r: 0.44876438, g: 0.49517733, b: 0.55611223, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -364,13 +364,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707353833}
-  m_LocalRotation: {x: 0.22778767, y: 0.41204035, z: 0.8734977, w: -0.12384393}
+  m_LocalRotation: {x: 0.25769907, y: -0.16110745, z: 0.9522709, w: 0.028560704}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -50.919, y: 27.992, z: 182.604}
+  m_LocalEulerAnglesHint: {x: 18.757, y: 30.571, z: 181.733}
 --- !u!1 &804768134
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,8 +896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -27.1}
-  m_SizeDelta: {x: 704.9, y: 742.56}
+  m_AnchoredPosition: {x: 0, y: -59}
+  m_SizeDelta: {x: 704.9, y: 935.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737284392
 MonoBehaviour:
@@ -1096,7 +1096,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 119}
-  m_SizeDelta: {x: 486.9, y: 69.73}
+  m_SizeDelta: {x: 569.1, y: 69.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912825639
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.06
-  m_Text: NOME DO JOGO
+  m_Text: The Bench of Truth
 --- !u!222 &1912825640
 CanvasRenderer:
   m_ObjectHideFlags: 0
