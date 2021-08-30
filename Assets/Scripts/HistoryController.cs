@@ -72,10 +72,7 @@ public class HistoryController : MonoBehaviour
 
     void chooseStoryChoice(Choice choice)
     {
-        for (int i = 0; i < this.transform.childCount; i++)
-        {
-            Destroy(this.transform.GetChild(i).gameObject);
-        }
+        story.ChooseChoiceIndex(choice.index);
 
         updateUI();
     }
