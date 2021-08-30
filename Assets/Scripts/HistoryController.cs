@@ -80,6 +80,7 @@ public class HistoryController : MonoBehaviour
     void chooseStoryChoice(Choice choice)
     {
         story.ChooseChoiceIndex(choice.index);
+
         updateUI();
     }
 
