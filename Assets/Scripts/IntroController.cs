@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class IntroController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class IntroController : MonoBehaviour
 
     public void Quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 
     public void LoadCredits()
