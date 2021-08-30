@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class IntroController : MonoBehaviour
 {
-    public void Play() {
+    public void Play()
+    {
         UnityEngine.SceneManagement.SceneManager.LoadScene("History01");
     }
 
-    public void Quit() {
+    public void Quit()
+    {
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    public void LoadCredits()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CreditRoll");
     }
 }

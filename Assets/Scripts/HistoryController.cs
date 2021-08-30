@@ -10,6 +10,7 @@ public class HistoryController : MonoBehaviour
     public TextAsset inkJson;
     public Text textPrefab;
     public Button buttonPrefab;
+    public GameObject endgamePanel;
 
     private Story story;
 
@@ -22,49 +23,55 @@ public class HistoryController : MonoBehaviour
     void updateUI()
     {
         eraseUI();
-        bool isGameTalking = false;
 
         Text storyText = Instantiate(textPrefab) as Text;
         string text = loadStory();
 
-        // ------- handle ink tags -------
+        //-------handle ink tags -------
         List<string> tags = story.currentTags;
         if (tags.Count > 0)
         {
-            if (tags[0] == "Game") isGameTalking = true;
             for (int i = 0; i < tags.Count; i++)
             {
-                // check endGame here
+                Debug.Log(tags[i]);
+                if (tags[i] == "Endgame")
+                {
+                    endgamePanel.SetActive(true);
+                    Transform messageText = endgamePanel.transform.Find("Message");
+                    Text messageContent = messageText.GetComponent<Text>();
+                    if (tags[1] == "BankRobed")
+                    {
+                        messageContent.text = "You couldn't help him. The bank has been robed!";
+                    }
+                    else messageContent.text = "You helped him. The bank has not been robed!";
+                }
             }
         }
 
         storyText.text = text;
-        if (isGameTalking)
-        {
-            Debug.Log("aaaa");
-            storyText.color = new Color(233, 231, 76);
-        }
-        else storyText.color = Color.white;
-
         storyText.transform.SetParent(this.transform, false);
 
-        foreach (Choice choice in story.currentChoices)
+        if (story.currentChoices.Count > 0)
         {
-            Button choiceButton = Instantiate(buttonPrefab) as Button;
-            Text choiceText = buttonPrefab.GetComponentInChildren<Text>();
-            choiceText.text = choice.text;
-            choiceButton.transform.SetParent(this.transform, false);
-
-            choiceButton.onClick.AddListener(delegate
+            foreach (Choice choice in story.currentChoices)
             {
-                chooseStoryChoice(choice);
-            });
+                Button choiceButton = Instantiate(buttonPrefab) as Button;
+                Text choiceText = choiceButton.GetComponentInChildren<Text>();
+                choiceText.text = "";
+                choiceText.text = choice.text;
+                choiceButton.transform.SetParent(this.transform, false);
+
+                choiceButton.onClick.AddListener(delegate
+                {
+                    chooseStoryChoice(choice);
+                });
+            }
         }
     }
 
     void eraseUI()
     {
-        for (int i = 1; i < this.transform.childCount; i++)
+        for (int i = 0; i < this.transform.childCount; i++)
         {
             Destroy(this.transform.GetChild(i).gameObject);
         }
@@ -72,11 +79,7 @@ public class HistoryController : MonoBehaviour
 
     void chooseStoryChoice(Choice choice)
     {
-        for (int i = 0; i < this.transform.childCount; i++)
-        {
-            Destroy(this.transform.GetChild(i).gameObject);
-        }
-
+        story.ChooseChoiceIndex(choice.index);
         updateUI();
     }
 
@@ -87,7 +90,6 @@ public class HistoryController : MonoBehaviour
         {
             text = story.ContinueMaximally();
         }
-
         return text;
     }
 

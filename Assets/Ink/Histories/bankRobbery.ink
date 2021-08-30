@@ -1,15 +1,14 @@
 - Good morning #Game
 
-* Hello there, how's it going?
+* [Hello there, how's it going?]
 - I'm kinda agitated. #Game
-* Why?
+* [Why?] 
 
-- Its... complicated. #Game
+- Its... complicated... Can I talk to you about something? #Endgame #BankRobed
 
-- Can I talk to you about something? #Game
-* Who cares? It's a free country, I guess...
-* Morning.
-* ...
+* [Who cares? It's a free country, I guess...]
+* [I don't know.]
+* [...]
  
 - Yeah, I feel you. #Game
 
@@ -17,15 +16,15 @@
 
 - I'm thinking about robbing a bank. #Game
 
-* You're thinking about WHAT?
+* [You're thinking about WHAT?]
 
 - About robbing a bank. It's just one of those thoughts you have that you usually keep to yourself. I don't even know why I'm telling you this. I guess i just wanted to get it out of my chest, and you seemed like the right person to talk to. #Game
 
 - I'm in deep debt... I mortgaged my house and sold every damn thing I could. My wife left me, I can't get a loan, let alone a job. That's the only option I have left. #Game
 
-* Are you sure that's your only option?
-* I mean, my sister is into pyramid schemes and she makes a buck out of it. Maybe I could pass you her number?
-* ...
+* [Are you sure that's your only option?]
+* [I mean, my sister is into pyramid schemes and she makes a buck out of it. Maybe I could pass you her number?]
+* [...]
 - Absolutely. Nothing can convince me not to do it. #Game
 
 - It's all planned. I already got a gun, a mask, and a getaway vehicle. #Game
@@ -36,6 +35,6 @@
 
 - Before I go, I want to ask you something. What do I do? #Game
 
-* <b>You'll think of something.</b>
+* [<b>You'll think of something.</b>]
 
 -> END
