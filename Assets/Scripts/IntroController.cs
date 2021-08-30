@@ -6,7 +6,7 @@ public class IntroController : MonoBehaviour
 {
     public void Play()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("History01");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Story01");
     }
 
     public void Quit()

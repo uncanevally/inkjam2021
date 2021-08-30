@@ -33,13 +33,12 @@ public class HistoryController : MonoBehaviour
         {
             for (int i = 0; i < tags.Count; i++)
             {
-                Debug.Log(tags[i]);
                 if (tags[i] == "Endgame")
                 {
                     endgamePanel.SetActive(true);
                     Transform messageText = endgamePanel.transform.Find("Message");
                     Text messageContent = messageText.GetComponent<Text>();
-                    if (tags[1] == "BankRobed")
+                    if (tags[1] == "BankRobbed")
                     {
                         messageContent.text = "You couldn't help him. The bank has been robed!";
                     }
